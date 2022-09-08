@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class UserControl : MonoBehaviour
 {
-    public GameObject selectedObject { get; private set; }
+    public GameObject selectedObject { get; private set; } // ENCAPSULATION
 
     // Update is called once per frame
     void Update()
     {
-        OnClickRay();
+        OnClickRay(); // ABSTRACTION
     }
 
-    void OnClickRay()
+    void OnClickRay() // ABSTRACTION
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -32,7 +32,7 @@ public class UserControl : MonoBehaviour
         }
     }
 
-    void SelectObject(GameObject obj)
+    void SelectObject(GameObject obj) // ABSTRACTION
     {
         if (selectedObject != null)
         {
@@ -45,7 +45,7 @@ public class UserControl : MonoBehaviour
         selectedObject = obj;
     }
 
-    void ClearSelection()
+    void ClearSelection() // ABSTRACTION
     {
         selectedObject = null;
     }

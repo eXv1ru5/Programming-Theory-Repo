@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tree : Resource
+public class Tree : Resource // INHERITANCE
 {
     void Update()
     {
@@ -12,7 +12,7 @@ public class Tree : Resource
         }
     }
 
-    public override void DisplayTextResource()
+    public override void DisplayTextResource() // POLYMORPHISM
     {
         typeText.text = "Tree";
         nameText.text = userControl.selectedObject.name;

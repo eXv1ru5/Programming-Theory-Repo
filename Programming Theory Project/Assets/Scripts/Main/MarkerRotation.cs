@@ -9,6 +9,11 @@ public class MarkerRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RotateY();
+    }
+
+    void RotateY() // ABSTRACTION
+    {
         transform.Rotate(0, rotationSpeed * Time.deltaTime, 0);
     }
 }

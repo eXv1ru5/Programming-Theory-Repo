@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FarmerW : Farmer
+public class FarmerW : Farmer // INHERITANCE
 {
 
     void Update()
@@ -14,7 +14,7 @@ public class FarmerW : Farmer
         }        
     }
 
-    public override void DisplayTextFarmer()
+    public override void DisplayTextFarmer() // POLYMORPHISM
     {
         typeText.text = "FarmerW";
         nameText.text = userControl.selectedObject.name;

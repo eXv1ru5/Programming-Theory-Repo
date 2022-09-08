@@ -10,7 +10,7 @@ public class Farmer : MonoBehaviour
     public UserControl userControl;
 
     private float m_Speed = 10;
-    public float speed
+    public float speed // ENCAPSULATION
     {
         get { return m_Speed; }
         set
@@ -33,7 +33,7 @@ public class Farmer : MonoBehaviour
         userControl = GameObject.Find("UserControl").GetComponent<UserControl>();
     }
 
-    public virtual void DisplayTextFarmer()
+    public virtual void DisplayTextFarmer() // ABSTRACTION
     {
         typeText.text = "Farmer";
         nameText.text = "name";
